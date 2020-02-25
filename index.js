@@ -1,7 +1,5 @@
 require('dotenv').config();
 require('./database');
-const { Users } = require('./models');
-const { router } = require('./routes');
 
 const { server, PORT } = require('./server');
 

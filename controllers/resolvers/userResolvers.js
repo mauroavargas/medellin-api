@@ -7,7 +7,7 @@ module.exports = {
     },
 
     resolverGetAllUsers: () => {
-        return Users.find({ is_active:true })
+        return Users.find({ is_active:true });
     },
 
     resolverCreateNewUser: document => {
@@ -19,7 +19,7 @@ module.exports = {
     },
 
     resolverDeleteUser: id => {
-        return Users.findByIdAndUpdate(id, { is_active: false, new:true })
+        return Users.findByIdAndUpdate(id, { is_active: false, new:true });
     }
 
 }
